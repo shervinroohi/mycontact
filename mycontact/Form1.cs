@@ -14,11 +14,10 @@ namespace mycontact
 {
     public partial class Form1 : Form
     {
-        IContactRepository repository;
+        EFContactRepository repository = new EFContactRepository();
         public Form1()
         {
             InitializeComponent();
-            repository = new ContactRepository();
         }
 
         private void Form1_Load(object sender, EventArgs e)
