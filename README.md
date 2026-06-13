@@ -17,7 +17,7 @@ A simple Phone Book application built with C# Windows Forms and SQL Server.
 * .NET Framework 4.7.2
 * Windows Forms
 * SQL Server
-* ADO.NET
+* Entity Framework 6
 
 ## Screenshots
 
@@ -55,23 +55,15 @@ CREATE TABLE mycontact (
 
 ## Configuration
 
-Update the connection string in the `App.config` file with your SQL Server instance name:
-
-```xml
-<connectionStrings>
-  <add name="MyContactDB"
-       connectionString="Data Source=YOUR_SERVER_NAME;Initial Catalog=mycontact_DB;Integrated Security=True"
-       providerName="System.Data.SqlClient" />
-</connectionStrings>
-```
+Update the connection string in the `App.config` file.
+Entity Framework will automatically create the database tables on first run.
 
 ## How to Run
 
 1. Clone the repository.
-2. Create the database using the SQL script above.
-3. Configure the connection string in `App.config`.
-4. Open `mycontact.sln` in Visual Studio.
-5. Build and run the project.
+2. Configure the connection string in `App.config`.
+3. Open `mycontact.sln` in Visual Studio.
+4. Build and run the project.
 
 ## License
 
