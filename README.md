@@ -27,6 +27,13 @@ A simple Phone Book application built with C# Windows Forms and SQL Server.
 ### Add / Edit Contact
 ![Add Contact](mycontact/screenshots/add-contact.png)
 
+## Versions
+
+| Branch | Data Access Technology |
+|--------|----------------------|
+| main | ADO.NET |
+| entity-framework | Entity Framework |
+
 ## Database Setup
 
 Open SQL Server Management Studio (SSMS) and execute the following script:
